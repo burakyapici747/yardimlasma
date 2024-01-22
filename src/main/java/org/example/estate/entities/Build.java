@@ -11,7 +11,7 @@ public class Build {
         return price;
     }
 
-    public double getMetersquare() {
+    public double getMeterSquare() {
         return meterSquare;
     }
 
@@ -23,7 +23,7 @@ public class Build {
         return hallNum;
     }
 
-    public Build(double price, double metersquare, int roomNum, int hallNum){
+    public Build(double price, double meterSquare, int roomNum, int hallNum){
         this.price= price;
         this.meterSquare=meterSquare;
         this.roomNum=roomNum;
