@@ -48,6 +48,8 @@ public class Main {
         System.out.println("Villaların toplam metrekaresi : " +buildService.getTotalSquareMetersOfVillas(builds));
         System.out.println("Yazlıkların toplam metrekaresi : " +buildService.getTotalSquareMetersOfSummeries(builds));
         System.out.println("Tüm konutların toplam metrekaresi : " +buildService.getTotalSquareMetersOfBuilds(builds));
+        System.out.println("2+1 evlerin listesi : " +buildService.filterBuildsByRoomNumAndHallNum(builds, 2,1));
+        System.out.println("4+1 evlerin listesi : " +buildService.filterBuildsByRoomNumAndHallNum(builds, 4,1));
 
 
 
