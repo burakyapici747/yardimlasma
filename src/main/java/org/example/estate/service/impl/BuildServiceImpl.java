@@ -102,15 +102,14 @@ public class BuildServiceImpl  implements BuildService {
     }
 
     @Override
-    public List<Build> filterBuildByRoomAndHall(List<Build> builds, int roomNum, int hallNum) {
+    public List<Build> filterBuildsByRoomNumAndHallNum(List<Build> builds, int roomNum, int hallNum) {
         List<Build> filterList = new ArrayList<>();
         for (int i = 0; i< builds.size(); i++){
-            if ((builds.get(i).getRoomNum()==roomNum)&&(builds.get(i).getHallNum()==hallNum)){
+            if (builds.get(i).getRoomNum()==roomNum && builds.get(i).getHallNum()==hallNum){
                 filterList.add(builds.get(i));
 
             }
         }
-
         return filterList;
     }
 
