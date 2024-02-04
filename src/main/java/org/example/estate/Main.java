@@ -52,11 +52,5 @@ public class Main {
         System.out.println("4+1 evlerin listesi : " +buildService.filterBuildsByRoomNumAndHallNum(builds, 4,1));
 
 
-
-
-
-
-
-
     }
 }
