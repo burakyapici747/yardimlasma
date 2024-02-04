@@ -1,7 +1,5 @@
 package order.entities;
 
-import order.service.CustomerService;
-
 import java.time.LocalDateTime;
 
 public class Customer {

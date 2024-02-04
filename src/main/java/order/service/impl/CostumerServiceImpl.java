@@ -11,10 +11,11 @@ public class CostumerServiceImpl implements CustomerService {
 
     private List<Customer> customers = new ArrayList<>();
     @Override
-    public void create(String customerName, int id) {
+    public Customer create(String customerName, int id) {
         Customer customer = new Customer(customerName, id,LocalDateTime.now());
         customers.add(customer);
 
+        return customer;
     }
     @Override
     public Customer getById(int id) {
@@ -35,9 +36,8 @@ public class CostumerServiceImpl implements CustomerService {
         for (int i=0; i<customers.size(); i++){
             if (customers.get(i).getCustomerName().contains("c")){
                 withC += customers.get(i).getCustomerName() +" ";
-                return withC;
             }
         }
-        return null;
+        return withC;
     }
 }

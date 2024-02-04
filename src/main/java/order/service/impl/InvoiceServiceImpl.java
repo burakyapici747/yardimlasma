@@ -11,9 +11,11 @@ public class InvoiceServiceImpl implements InvoiceService {
     private List<Invoice> invoices = new ArrayList<>();
 
     @Override
-    public void create(int id, Order order) {
+    public Invoice create(int id, Order order) {
         Invoice invoice = new Invoice(id, order);
         invoices.add(invoice);
+
+        return  invoice;
     }
     @Override
     public Invoice getByAmount() {

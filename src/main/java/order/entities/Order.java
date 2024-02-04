@@ -6,7 +6,7 @@ public class Order {
     private int amount;
     private Customer customer;
 
-    public Order(int id, int productId) {
+    public Order(int id, int productId, int amount, Customer customer) {
         this.id = id;
         this.productId = productId;
         this.amount = amount;
